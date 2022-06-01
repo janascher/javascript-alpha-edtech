@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(50, 51, 48);
+    padding: 30px;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+}
+
+nav li {
+    list-style: none;
+    line-height: 4vh;
+}
