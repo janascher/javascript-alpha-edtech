@@ -18,7 +18,7 @@
 
 <div align="center">
 	<a href="https://janascher.github.io/javascript-alpha-edtech/">
-		<img src="https://user-images.githubusercontent.com/79182711/171508239-3d8c7a84-3781-403e-b9e2-f62a3b869c6d.PNG" alt="Imagem da página da aula 01 de Javascript" title="Imagem da página da aula 01 de Javascript" width="650" />
+		<img src="https://user-images.githubusercontent.com/79182711/171922165-aa0231c1-d330-45d4-811e-0a1902a7bddf.PNG" alt="Imagem da página da aula 01 de Javascript" title="Imagem da página da aula 01 de Javascript" width="650" />
 	</a>
 </div>
 
