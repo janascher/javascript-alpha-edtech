@@ -4,6 +4,7 @@
 
 body {
     background: url(../assets/image/rcat_ysre_211001.jpg) center/cover no-repeat fixed;
+    overflow: hidden;
 }
 
 header {
@@ -11,7 +12,7 @@ header {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 98vh;
+    height: 89vh;
 }
 
 h1 {
