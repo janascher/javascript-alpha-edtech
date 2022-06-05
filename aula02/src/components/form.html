@@ -5,28 +5,32 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- #### CSS #### -->
+        <!-- #### Stylesheet #### -->
         <link rel="stylesheet" href="../styles/form.css">
+        <!-- #### Google Fonts #### -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <!-- #### Title #### -->
         <title>Compare Números</title>
     </head>
     <body>
-        <header>
-            <h1>Comparação Entre Dois Números</h1>
-            <p>Descubra se o primeiro número é maior, menor ou igual ao segundo número.</p>
+        <header class="container">
+            <h1 class="title">Comparação Entre Dois Números</h1>
+            <p class="text">Descubra se o primeiro número é maior, menor ou igual ao segundo número.</p>
         </header>
         <main>
             <!-- #### Formulário #### -->
-            <form>
-                <label for="firstNumber">Digite o primeiro número:</label>
+            <form class="container">
+                <label class="text" for="firstNumber">Digite o primeiro número:</label>
                 <input type="number" name="first-number" id="first-number" />
 
-                <label for="secondNumber">Digite o segundo número:</label>
+                <label class="text" for="secondNumber">Digite o segundo número:</label>
                 <input type="number" name="second-number" id="second-number" />
 
-                <button type="submit">Comparar</button>
+                <button class="button" type="submit">Comparar</button>
             </form>
-            <p id="response"></p>
+            <p class="response" id="response"></p>
         </main>
         <!-- #### Script #### -->
         <script src="../../js/form.js"></script>

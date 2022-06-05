@@ -55,8 +55,15 @@ document.querySelector("button").addEventListener("click", (e) => {
     }
 
     // ------ Resultado final ------
-    let daysDie = lifetime - ageDays;
+    let daysTotalDie = lifetime - ageDays;
+    let yearsDie = parseInt(daysTotalDie/365);
+    console.log(yearsDie)
+    let monthDie = parseInt((daysTotalDie - (yearsDie * 365))/30);
+    console.log(monthDie)
+    let daysDie = parseInt(daysTotalDie - (yearsDie*365) - (monthDie * 30));
+    console.log(daysDie)
 
-    response.innerHTML = "Você possui " + daysDie + " dias de vida!";
-    console.log("Você possui " + daysDie + " dias de vida!");
+    response.innerHTML = "Você possui " + daysDie + " dias, " + monthDie + " meses e " + yearsDie + " anos de vida!";
+
+    console.log("Você possui " + daysDie + " dias, " + monthDie + " meses e " + yearsDie + " anos de vida!");
 })
