@@ -1,0 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../assets/image/number.jpg) center/cover no-repeat fixed;
+    overflow: hidden;
+}
