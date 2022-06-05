@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <!-- #### Meta #### -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- #### Stylesheet #### -->
+        <link rel="stylesheet" href="../styles/age.css">
+        <!-- #### Google Fonts #### -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <!-- #### Title #### -->
         <title>Expectativa de Vida</title>
     </head>
     <body>
-        <header>
-            <h1>Por Quanto Tempo Vou Viver?</h1>
-            <p>Preencha seus dados para descobrir qual é a sua expectativa de vida.</p>
+        <header class="container">
+            <h1 class="title">Por Quanto Tempo Vou Viver?</h1>
+            <p class="text">Preencha seus dados para descobrir qual é a sua expectativa de vida.</p>
         </header>
         <main>
             <!-- #### Formulário #### -->
-            <form>
+            <form class="container">
                 <fieldset>
                     <legend><h3>Qual a sua idade?</h3></legend>
                     <!-- #### Dia do aniversário #### -->
-                    <label for="birth-day">Dia:</label>
-                    <input type="number" name="number" id="birth-day" />
+                    <label class="text" for="birth-day">Dia:</label>
+                    <input class="inputBirth" type="number" name="number" id="birth-day" />
                     <!-- #### Mês do aniversário #### -->
-                    <label for="month-birth">Mês:</label>
-                    <input type="number" name="number" id="month-birth" placeholder="Mês" />
+                    <label class="text" for="month-birth">Mês:</label>
+                    <input class="inputBirth" type="number" name="number" id="month-birth" />
                     <!-- #### Ano do aniversário #### -->
-                    <label for="birth-year">Ano:</label>
-                    <input type="number" name="number" id="birth-year" />
+                    <label class="text" for="birth-year">Ano:</label>
+                    <input class="inputBirth" type="number" name="number" id="birth-year" />
                 </fieldset>
-                
-                <h3>Selecione seu gênero:</h3>
-                <!-- Feminino -->
-                <label for="gender-female">Feminino</label>
-                <input type="radio" id="gender-female" name="gender" value="female">
-                <!-- Masculino -->
-                <label for="gender-male">Masculino</label>
-                <input type="radio" id="gender-male" name="gender" value="male">
+
+                <div>
+                    <h3>Selecione seu gênero:</h3>
+                    <!-- Feminino -->
+                    <label class="text" for="gender-female">Feminino</label>
+                    <input class="inputGender" type="radio" id="gender-female" name="gender" value="female">
+                    <!-- Masculino -->
+                    <label class="text" for="gender-male">Masculino</label>
+                    <input class="inputGender" type="radio" id="gender-male" name="gender" value="male">
+                </div>                
 
                 <!-- #### Botão #### -->
-                <button type="submit">Verificar</button>
+                <button class="button" type="submit">Verificar</button>
             </form>
-            <p id="response"></p>
+            <p class="response" id="response"></p>
         </main>
         <!-- #### Script #### -->
         <script src="../../js/age.js"></script>

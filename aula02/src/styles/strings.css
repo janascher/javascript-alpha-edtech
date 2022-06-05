@@ -3,7 +3,7 @@
 }
 
 body {
-    background: url(../assets/image/question-pokemon.jpg) center/cover no-repeat fixed;
+    background: url(../assets/image/question-sasuke.jpg) center/cover no-repeat fixed;
     overflow: hidden;
 }
 
@@ -16,9 +16,9 @@ body {
 }
 
 .title {
-    color: rgb(255, 254, 255);
+    color: rgba(84, 70, 191, 1);
     font-size: 3vw;
-    text-shadow: 2px 8px 9px rgb(11, 26, 66), 2px 8px 13px rgba(11,26,66,0.67);
+    text-shadow: rgb(20 20 20) 1px 1px 1px;
 }
 
 form {
@@ -27,7 +27,7 @@ form {
 
 input {
     border: 0.2vw solid rgba(18, 27, 42, 1);
-    color: rgb(11, 26, 66);
+    color: rgba(20, 20, 20, 1);
     font-size: 1.7vw;
     padding-left: 1vw;
     width: 17vmax;
@@ -35,7 +35,7 @@ input {
 }
 
 .button {
-    color: rgb(11, 26, 66);
+    color: rgba(20, 20, 20, 1);
     cursor: pointer;
     font-size: 1.6vw;
     font-weight: bold;
@@ -53,15 +53,15 @@ input {
 }
 
 .text {
-    color: rgb(255, 254, 255);
+    color: rgba(20, 20, 20, 1);
     font-size: 1.5vw;
 }
 
 .response {
-    color: rgba(66, 136, 48, 1);
+    color: rgb(130, 36, 24);
     font-family: 'Roboto', sans-serif;
     font-size: 1.6vw;
     font-weight: bold;
     text-align: center;
-    text-shadow: 1px 3px 0 rgba(0, 0, 0, 1), 1px 1px 12px rgba(0, 0, 0, 1);
+    text-decoration: underline;
 }
