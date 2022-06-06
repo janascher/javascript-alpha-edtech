@@ -10,17 +10,17 @@ let gender = null;
 
 // ------ Data de Nascimento ------
 document.querySelector("#birth-day").addEventListener("change", (e) => {
-    birthDay = Number(e.target.value);
+    birthDay = parseInt(e.target.value);
     console.log(birthDay);
 })
 
 document.querySelector("#month-birth").addEventListener("change", (e) => {
-    birthMonth = Number(e.target.value);
+    birthMonth = parseInt(e.target.value);
     console.log(birthMonth);
 })
 
 document.querySelector("#birth-year").addEventListener("change", (e) => {
-    birthYear = Number(e.target.value);
+    birthYear = parseInt(e.target.value);
     console.log(birthYear);
 })
 
@@ -55,15 +55,18 @@ document.querySelector("button").addEventListener("click", (e) => {
     }
 
     // ------ Resultado final ------
+    // Total de dias para morrer
     let daysTotalDie = lifetime - ageDays;
+    // Quantos anos de vida a pessoa possui
     let yearsDie = parseInt(daysTotalDie/365);
     console.log(yearsDie)
+    // Quantos meses de vida a pessoa possui
     let monthDie = parseInt((daysTotalDie - (yearsDie * 365))/30);
     console.log(monthDie)
+    // Quantos dias de vida a pessoa possui
     let daysDie = parseInt(daysTotalDie - (yearsDie*365) - (monthDie * 30));
     console.log(daysDie)
 
     response.innerHTML = "Você possui " + daysDie + " dias, " + monthDie + " meses e " + yearsDie + " anos de vida!";
-
     console.log("Você possui " + daysDie + " dias, " + monthDie + " meses e " + yearsDie + " anos de vida!");
 })
