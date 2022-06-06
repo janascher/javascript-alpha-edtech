@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
+    height: 34vh;
 }
 
 .title {
