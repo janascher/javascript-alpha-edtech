@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+/* body {
+    background: url(../assets/image/question-psyduck.jpg) center/cover no-repeat fixed;
+    overflow: hidden;
+} */
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    height: 91vh;
+}
+
+.title {
+    color: rgba(98, 37, 28, 1);
+    font-size: 5vw;
+    text-shadow: 4px 2px 1px rgb(18 18 18);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+}
+
+.item {
+    line-height: 6vh;
+    text-align: center;
+}
+
+.item li {
+    list-style: none;
+}
+
+.item a {
+    color: rgb(18 18 18);
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color: rgba(98, 37, 28, 1);
+    text-decoration: underline;
+}

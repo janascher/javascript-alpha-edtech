@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-
+ 
 body {
     background: linear-gradient(to right, rgba(112, 112, 112, 1), rgba(183, 143, 179, 1));
     font-family: "Roboto Condensed", sans-serif;
