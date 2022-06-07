@@ -32,4 +32,4 @@ function calculate () {
         result.innerHTML = `${multiplication}`;
         console.log(`${multiplication}`);
     }
-}
+} 
