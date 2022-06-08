@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.card {
+    background-color: rgba(82, 66, 92, 1);
+    border-radius: 1vw;
+    box-shadow: 0.8vw 1vw 1vw 0 rgb(0 0 0 / 75%);
+    margin: auto;
+    transition: 0.3s;
+    height: 39vmin;
+    width: 79vmin;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+    height: 100%;
+}
+
+.text {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.6rem;
+    text-align: center;
+    width: 23vw;
+}
+
+.input {
+    border: 0.2vw solid rgba(112, 112, 112, 1);
+    border-radius: 1vw;
+    color: rgba(36, 36, 36, 1);
+    font-size: 1.6rem;
+    width: 20vw;
+}
+
+.button {
+    background-color: rgb(240, 95, 114);
+    border-radius: 1vw;
+    border: none;
+    width: 23vmin;
+}
+
+p {
+    color: rgba(82, 66, 92, 1);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: left;
+    width: 100%;
+}

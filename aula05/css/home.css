@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+    height: 100%;
+}
+
+.text {
+    color: rgba(36, 36, 36, 1);
+    font-size: 1.6rem;
+    text-align: center;
+    width: 23vw;
+}
+
+ul {
+    padding: 0;
+}
+
+.item {
+    line-height: 6vh;
+    text-align: center;
+}
+
+.item li {
+    list-style: none;
+}
+
+.item a {
+    color: rgb(18 18 18);
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+.item a:hover {
+    color:rgb(240, 95, 114);
+    text-decoration: underline;
+}
