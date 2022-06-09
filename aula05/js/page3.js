@@ -1,51 +1,36 @@
 document.querySelector("button").addEventListener("click", selectProduct);
+const product = new Image(250,250);
 
 function selectProduct() {
 
-    let femaleProduct = document.querySelector("#female").value;
+    const femaleProduct = document.querySelector("#female");
+    const photoProduct = document.querySelector("#productDisplay");
 
-    switch (femaleProduct) {
+    switch (femaleProduct.value) {
         case "blouse":
-            const photoBlouse = document.querySelector("#productDisplay");
-            // Largura (width) e altura (height) da imagem:
-            let blouse = new Image(250,250);
-            blouse.src = "./assets/image/blouse.png";
-            blouse.alt = "Blusa";
-            photoBlouse.appendChild(blouse);           
+            product.src = "./assets/image/blouse.png";
+            product.alt = "Blusa";        
         break;
         case "bags":
-            const photoBags = document.querySelector("#productDisplay");
-            let bags = new Image(250,250);
-            bags.src = "./assets/image/bags.png";
-            bags.alt = "Bolsa";
-            photoBags.appendChild(bags);           
+            product.src = "./assets/image/bags.png";
+            product.alt = "Bolsa";     
         break;
         case "t-shirt":
-            const photoTshirt = document.querySelector("#productDisplay");
-            let tShirt = new Image(250,250);
-            tShirt.src = "./assets/image/t-shirt.png";
-            tShirt.alt = "Camiseta";
-            photoTshirt.appendChild(tShirt);           
+            product.src = "./assets/image/t-shirt.png";
+            product.alt = "Camiseta";         
         break;
         case "pants":
-            const photoPants = document.querySelector("#productDisplay");
-            let pants = new Image(250,250);;
-            pants.src = "./assets/image/pants.png" ;
-            pants.alt = "Calça";
-            photoPants.appendChild(pants);           
+            product.src = "./assets/image/pants.png" ;
+            product.alt = "Calça";        
         break;
         case "dresses":
-            const photoDresses = document.querySelector("#productDisplay");
-            let dresses = new Image(250,250);
-            dresses.src = "./assets/image/dresses.png";
-            dresses.alt = "Vestido";
-            photoDresses.appendChild(dresses);           
+            product.src = "./assets/image/dresses.png";
+            product.alt = "Vestido";     
         break;
         default:
-            const photoDefault = document.querySelector("#productDisplay");
-            let store = new Image(250,250);
-            store.src = "./assets/image/store.png";
-            store.alt = "Loja";
-            photoDefault.appendChild(store);
+            product.src = "./assets/image/store.png";
+            product.alt = "Loja";
     }
+
+    photoProduct.appendChild(product);
 }
