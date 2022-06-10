@@ -6,7 +6,7 @@ const audioExplosion = new Audio("./assets/sound/big_explosion_cut_off.ogg");
 
 let timer = null;
 
-document.querySelector("#button").addEventListener("click", bomb);
+button.addEventListener("click", bomb);
 
 function bomb() {
     h1.innerHTML = "Rápido! Desarme a bomba em 10s!"
@@ -30,5 +30,3 @@ function bombOff() {
     bombImage.src = "./assets/image/bomb-off.png";
     clearTimeout(timer);
 }
-
-button.addEventListener("click", bomb);
