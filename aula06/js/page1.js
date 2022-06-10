@@ -29,4 +29,3 @@ function bombOff() {
     h1.innerHTML = "Uuuuufa, foi por pouco..."
     bombImage.src = "./assets/image/bomb-off.png";
     clearTimeout(timer);
-}
