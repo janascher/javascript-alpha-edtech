@@ -36,6 +36,8 @@ function armedBomb() {
     audioExplosion.play();
     clearInterval(timer);
     clearInterval(countdown);
+    bombImage.removeEventListener("click", bomb);
+    bombImage.removeEventListener("click", bombOff);
 }
 
 function bombOff() {
