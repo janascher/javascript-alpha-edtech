@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../assets/image/full.jpg) center/cover no-repeat;
+    color: rgba(36, 36, 36, 1);
+    font-family: "Roboto Condensed", sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(112, 112, 112, 0.5);
+    min-height: 98vh;
+    width: 100%;
+    gap: 1rem;
+}
+
+#number {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 1.5rem;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    width: 11vw;
+}
+
+.text {
+    font-size: 1.5rem;
+    padding: 0.2rem 1rem;
+}
+
+#button {
+    background-color: rgb(13, 121, 36);
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem; 
+}
+
+.button:hover {
+    opacity: 1;
+    transition: 2;
+}
+
+#result {
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0.2rem 1rem;;
+    text-shadow: 1px 1px 1px rgb(178, 185, 181);
+}
