@@ -3,7 +3,7 @@ document.querySelector("button").addEventListener("click", calculate);
 function calculate() {
 
     const weight = document.querySelector("#inputWeight").value;
-    const height = document.querySelector("#inputHeight").value;
+    const height = document.querySelector("#inputHeight").value.replace(",", ".");
 
     let imc = (weight/(height*height)).toFixed(1);
 
