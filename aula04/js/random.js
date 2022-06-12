@@ -2,34 +2,27 @@ document.querySelector("button").addEventListener("click", random);
 
 function random() {
 
-    const minNumber = parseFloat(document.querySelector("#minNumber").value);
-    const maxNumber = parseFloat(document.querySelector("#maxNumber").value);
+    const minNumber = parseFloat(document.querySelector("#minNumber").value.replace(",", "."));
+    const maxNumber = parseFloat(document.querySelector("#maxNumber").value.replace(",", "."));
+    const result = document.querySelector("#result");
 
-    let min = Number.isInteger(minNumber);
-    let max = Number.isInteger(maxNumber);
+    if (((minNumber % 1 === 0) && (maxNumber % 1 === 0))) {
 
-    // console.log(typeof minNumber)
-    // console.log(minNumber)
-    // console.log(maxNumber)
+        if (minNumber < maxNumber) {
+            let randomNumber = Math.ceil(Math.random() * (maxNumber - minNumber) + minNumber);
+            result.innerHTML = `Número sorteado: ${randomNumber}`;
 
-    // Para validar se o num é inteiro, fazer o calc utilizando o % (resto)
-    if (min > max) {
-        console.log("Erro! O valor mínimo é maior que o máximo.")
-    } else if ((isNaN(minNumber)) && (min == false)) {
-        console.log("Digite um número inteiro no campo valor mínino acima.")
-    } else if ((isNaN(minNumber)) && (min == false)) {
-        console.log("Digite um número inteiro no campo valor máximo acima.")
+        } else if (minNumber > maxNumber) {
+            result.innerHTML = "Erro! O valor mínimo é maior que o máximo.";
+
+        } else if (isNaN(minNumber)) {
+            result.innerHTML = "Insira um número inteiro no campo acima.";
+
+        } else if (isNaN(maxNumber)) {
+            result.innerHTML = "Insira um número inteiro no campo acima.";
+        }
+        
     } else {
-        let sorteio = parseInt((Math.random() * (maxNumber - minNumber)) + minNumber);
-        console.log(sorteio)
+        console.log("é flutuante, insira números inteiros")       
     }
-
-    // if (!isNaN(minNumber) && !isNaN(maxNumber)) {
-    //     let sorteio = parseInt((Math.random() * (maxNumber - minNumber)) + minNumber);
-    //     console.log(sorteio)
-    // } else {
-    //     console.log("Erro! Os valores inseridos não são números.")
-    // }
-    
-    // document.querySelector("#result").textContent = `Valor: ${sorteio}}.`;
 }
