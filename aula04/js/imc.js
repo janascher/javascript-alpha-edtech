@@ -10,26 +10,26 @@ function calculate() {
     let message = "";
 
     if (imc < 18.5) {
-        message = "abaixo do peso";
+        message = "está abaixo do peso";
 
         console.log(imc);
-        console.log("abaixo do peso");
+        console.log("está abaixo do peso");
     } else if (imc <= 24.9) {
-        message = "peso normal";
+        message = "está no peso normal";
 
         console.log(imc);
-        console.log("peso normal");
+        console.log("está no peso normal");
         
     } else if (imc <= 29.9) {
-        message = "sobrepeso (acima do peso desejado)";
+        message = "no sobrepeso (acima do peso desejado)";
 
         console.log(imc);
-        console.log("sobrepeso (acima do peso desejado)");
+        console.log("no sobrepeso (acima do peso desejado)");
     } else if (imc >= 30) {
-        message = "obesidade";
+        message = "na obesidade";
 
         console.log(imc);
-        console.log("obesidade");
+        console.log("na obesidade");
     }
     
     document.querySelector("#result").textContent = `O seu IMC é ${imc}.`;
