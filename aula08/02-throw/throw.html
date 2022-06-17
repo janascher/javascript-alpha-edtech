@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- #### Meta #### -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- #### Google Fonts #### -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+
+        <!-- #### Title #### -->
+        <title>Throw</title>
+    </head>
+    <body>
+        <main>
+            
+            <section>
+                <h1>Formulário</h1>
+
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" />
+
+                    <label for="weight">Qual é o seu peso em kg?</label>
+                    <input type="text" name="weight" id="weight">
+
+                    <label for="height">Qual é a sua altura em cm?</label>
+                    <input type="text" name="height" id="height">
+
+                    <fieldset>
+                        <legend>Selecione seu gênero:</legend>
+
+                        <select name="gender" id="gender">
+                            <option value="select">Selecione</option>
+                            <option id="female" value="female">Feminino</option>
+                            <option id="male" value="male">Masculino</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- Data de nascimento -->
+                    <fieldset>  
+                        <legend>Qual é a sua data de nascimento?</legend>
+
+                        <label for="birth-day">Dia:</label>
+                        <input type="text" name="birth-day" id="birth-day">
+
+                        <label for="birth-month">Mês:</label>
+                        <input type="text" name="birth-month" id="birth-month">
+
+                        <label for="birth-year">Ano:</label>
+                        <input type="text" name="birth-year" id="birth-year">
+                    </fieldset>
+
+                    <button id="button" type="button">Enviar</button>
+                </form>
+
+                <br /><br />
+
+                <div id="message"></div>
+
+            </section> 
+
+        </main> 
+        <!-- #### Script #### -->
+        <script src="./throw.js"></script>
+    </body>
+</html>
