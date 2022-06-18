@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- #### Meta #### -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- #### Stylesheet #### -->
+        <link rel="stylesheet" href="./car.css">
+
+        <!-- #### Google Fonts #### -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+
+        <!-- #### Title #### -->
+        <title>Car</title>
+    </head>
+    <body>
+        <main class="background">
+            
+            <section class="display">
+                <h1>Top 5: os carros esportivos</h1>
+                <p>Selecione um modelo de carro esportivo para visualizar as informações dele:</p>
+
+                <form action="none" method="post">
+                    <select name="car" id="car">
+                        <option value="select">Selecione o modelo:</option>
+                        <option value="sandero">Sandero RS</option>
+                        <option value="peugeot">Peugeot 2008 THP</option>
+                        <option value="cactus">C4 Cactus</option>
+                        <option value="jetta">Jetta GLI</option>
+                        <option value="s60">S60 T4</option>
+                    </select>
+                </form>     
+                
+                <div id="info"></div>
+
+            </section> 
+
+        </main> 
+        <!-- #### Script #### -->
+        <script src="./car.js"></script>
+    </body>
+</html>

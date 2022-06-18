@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./assets/image/background-car.jpg) center/cover no-repeat;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Roboto Condensed", sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2vw;
+    background-color: rgba(112, 112, 112, 0.4);
+    min-height: 98vh;
+    height: 89vh;
+    width: 100%;
+}
+
+.display {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.display h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgb(194, 78, 95);
+    margin-top: 4rem;
+}
+
+.display p {
+    font-size: 1.3rem;
+}
+
+select {
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+}
+
+.displayProduct {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 2vw;
+    background: rgb(112 112 112);
+    border-radius: 2rem;
+    padding: 2vw;
+}
+
+img {
+    border-radius: 2rem;
+    border: 3px solid rgb(161, 150, 150);
+    width: 38vw;
+}
+
+.infoProduct p {
+    font-size: 1rem;
+    text-align: left;
+}
