@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- #### Meta #### -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- #### CSS #### -->
+        <link rel="stylesheet" href="./calculator.css">
+
+        <!-- #### Google Fonts #### -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+
+        <!-- #### Title #### -->
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <main class="card">
+            
+            <h1>Calculadora</h1>
+
+            <form class="container">
+                
+                <label for="numberOne">Digite um número:</label>
+                <input type="text" name="numberOne" id="numberOne" /><br />
+
+                <label for="numberTwo">Digite um número:</label>
+                <input type="text" name="numberTwo" id="numberTwo" /><br />
+
+                <p>Tipo de operador:</p>
+                <select name="operator" class="operator">
+                    <option value="">Selesione</option>
+                    <option value="1">Soma</option>
+                    <option value="2">Subtração</option>
+                    <option value="3">Multiplicação</option>
+                    <option value="4">Expoente</option>
+                    <option value="5">Divisão</option>    
+                </select><br /> 
+
+                <button class="button" type="button">Calcular</button>
+            </form>                       
+        </main>
+
+        <!-- #### Script #### -->
+        <script src="./calculator.js"></script>
+    </body>
+</html>
