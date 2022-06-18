@@ -9,10 +9,6 @@ function getText() {
         console.log(textareaStr)
         message.textContent = "Parsable JSON string!";
 
-        if (textareaStr !== "") {
-            throw new Error("Campo vazio!");
-        }
-
     } catch(error) {
         message.textContent = error.message;
     };

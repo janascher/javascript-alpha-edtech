@@ -22,7 +22,7 @@ function buttonForm() {
         message.textContent = "Preencha o campo que se encontra em branco.";
         console.log("Preencha o campo que se encontra em branco.")
         return null;
-    }
+    };
 
     // Verifica se a data é um número, 
     // se a data inserida é maior que a data atual, 
@@ -42,8 +42,7 @@ function buttonForm() {
         message.textContent = "A data inserida é maior que a data atual.";
         console.log("A data inserida é maior que a data atual.")
         return null;
-
-    }
+    };
 
     // Seleção de gênero
     switch (select.value) {
@@ -55,7 +54,7 @@ function buttonForm() {
             break
         default:
             genderValue = "Seleção inválida.";
-    }
+    };
 
     // Armazenamento de dados
     let user = {
@@ -74,7 +73,7 @@ function buttonForm() {
         <p>Nome: ${nameValue};</p>
         <p>Peso: ${weightValue} kg;</p>
         <p>Altura: ${heightValue} cm;</p>
-        <p>Gênero: ${genderValue}.</p>
-        <p>Data de nascimento: ${birthDateValue};</p>
+        <p>Gênero: ${genderValue};</p>
+        <p>Data de nascimento: ${birthDateValue}.</p>
     </div>`;
 }
