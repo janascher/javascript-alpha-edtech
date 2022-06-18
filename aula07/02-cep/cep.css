@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./assets/image/cep.jpg) center/cover no-repeat;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Roboto Condensed", sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2vw;
+    background-color: rgba(112, 112, 112, 0.7);
+    min-height: 98vh;
+    height: 89vh;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 4px 1px rgb(0, 0, 0);
+    margin-top: 4rem;
+}
+
+label {
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    text-shadow: 1px 1px 1px rgb(49, 48, 48);
+}
+
+input {
+    border: 0.1rem solid rgb(0, 0, 0);
+    border-radius: 1vw;
+    color: rgba(36, 36, 36, 1);
+    font-size: 1.6rem;
+    text-align: center;
+    width: 15vw;
+}
+
+.msg {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px rgb(49, 48, 48);
+}

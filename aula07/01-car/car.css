@@ -3,7 +3,7 @@
 }
 
 body {
-    background: url(../assets/image/background-car.jpg) center/cover no-repeat;
+    background: url(./assets/image/background-car.jpg) center/cover no-repeat;
     color: rgba(255, 255, 255, 1);
     font-family: "Roboto Condensed", sans-serif;
     overflow: hidden;

@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./assets/image/chat.jpg) center/cover no-repeat;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Roboto Condensed", sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2vw;
+    background-color: rgba(112, 112, 112, 0.5);
+    min-height: 98vh;
+    height: 89vh;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 4px 1px rgb(0, 0, 0);
+    margin-top: 4rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vw;
+}
+
+textarea {
+    background: rgb(72, 128, 115);
+    border: 0.1rem solid rgb(37, 91, 78);
+    border-radius: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    padding: 1vw;
+}
+
+
+input {
+    border: 0.1rem solid rgb(37, 91, 78);
+    border-radius: 0.5rem;
+    color: rgba(36, 36, 36, 1);
+    font-size: 1.2rem;
+    padding: 0.5vw;
+    width: 58vw;
+}
+
+button {
+    background-color: rgb(11, 48, 39);;
+    border-radius: 1vw;
+    border: none;
+    box-shadow: 0px 10px 13px -7px rgb(0, 0, 0), 5px 5px 15px 5px rgba(0,0,0,0);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 5vmin;
+    width: 23vmin;
+}
+
+button:hover {
+    background-color: rgb(37, 91, 78);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}

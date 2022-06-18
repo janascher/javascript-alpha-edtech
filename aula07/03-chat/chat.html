@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <!-- #### Stylesheet #### -->
-        <!-- <link rel="stylesheet" href="./css/car.css"> -->
+        <link rel="stylesheet" href="./chat.css">
 
         <!-- #### Google Fonts #### -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,25 +15,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
         <!-- #### Title #### -->
-        <title>Página 02</title>
+        <title>Chat</title>
     </head>
     <body>
         <main class="background">
-            
-            <section class="display">
-                <h1>Código de Endereçamento Postal</h1>
+            <section>
+                <h1>Chat</h1>
 
-                <form>
-                    <label for="cep">Qual é o seu CEP?</label>
-                    <input type="text" name="cep" id="inputCep" />
+                <form class="flex">
+                    <div>
+                        <textarea type="text" name="view" id="view" cols="68" rows="10" style="resize: none" disabled></textarea>
+                    </div>
+                    <div>
+                        <input type="text" name="inputText" id="inputText" size="35" />
+                    </div>
+                    <div>
+                        <button type="button" id="buttonSubmit">Enviar</button>
+                        <button type="button" id="buttonClear">Limpar</button>
+                    </div>
+               
                 </form>
 
-                <div id="message"></div>
-
             </section> 
-
         </main> 
         <!-- #### Script #### -->
-        <script src="./js/cep.js"></script>
+        <script src="./chat.js"></script>
     </body>
 </html>
