@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+header {
+    background-color: rgb(59, 94, 117);
+    color: rgba(255, 255, 255, 1);
+    padding: 0.5vw;
+    text-align: center;
+}
+
+main {
+    padding: 2vw 28vh;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 1);
+    border: 0.2rem solid rgb(201, 197, 197);
+    border-radius: 0.5rem;
+    margin-top: 2vh;
+    padding: 1.5vw;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5vh;
+    gap: 0.5rem;
+}
+
+label {
+    font-weight: 700;
+}
+
+input {
+    padding: 0.3vw;
+    border: 0.2rem solid rgb(201, 197, 197);
+    border-radius: 0.3rem;
+}
+
+button {
+    background-color: rgb(59, 94, 117);
+    border: 0;
+    border-radius: 0.5rem;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0.8vw;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: rgb(6, 46, 73);
+}
+
+#mensagem {
+    margin-top: 2vh;
+}
+
+#box-one {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(201, 197, 197);
+    position: fixed;
+    z-index: 1;
+}
+
+.content {
+    margin-top: 2vh;
+}
+
+.center {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    border: 0.2rem solid rgb(250, 242, 242);
+    width: 100%;
+}
+
+table th {
+    background-color: rgb(201, 197, 197); 
+    padding: 0.1vw 0.7vh;
+}
+
+table td {
+    padding: 0.1vw 0.7vh;
+    text-align: left;
+}
+
+table td img {
+    cursor: pointer;
+    width: 2vmax;
+}
