@@ -99,3 +99,7 @@ table td img {
     cursor: pointer;
     width: 2vmax;
 }
+
+.infoProduto {
+    margin-top: 3vh;
+}

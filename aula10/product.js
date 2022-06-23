@@ -23,9 +23,9 @@ function salvar() {
 
         } else {
             atualizar(editarID, produto);
-            mensagem.textContent = `Produto atualizado com sucesso!`;
-        }
-    }
+            mensagem.textContent = `Produto ${produto.nome} atualizado com sucesso!`;
+        };
+    };
 };
 
 // Lista os produtos
@@ -52,8 +52,13 @@ function listar() {
         let iconApagar = document.createElement("img");
 
         tdId.innerText = arrayProdutos[i].id;
+
         tdProduto.innerText = arrayProdutos[i].nome;
+        tdProduto.setAttribute("onclick", "infoProduto(" + arrayProdutos[i].id + ")");
+        tdProduto.style.cursor = "pointer";
+
         tdValor.innerText = `R$ ${arrayProdutos[i].valor}`;
+
         tdId.classList.add("center");
 
         iconEditar.src = "./assets/icon/icons8-edit.svg";
@@ -67,7 +72,59 @@ function listar() {
         iconApagar.setAttribute("onclick", "apagar(" + arrayProdutos[i].id + ")");
 
         i++;
-    }
+    };
+};
+
+// Exibe todas as informações do produto
+function infoProduto() {
+    let i = 0;
+    // const date = new Date(produtos[id].incluidoEm);
+
+    let theadInfo = document.querySelector("#thead-info");
+    let tbodyInfo = document.querySelector("#tbody-info");
+
+    theadInfo.style.background = "rgb(201, 197, 197)";
+    // Cria a tabela das informações
+    while (i < arrayProdutos.length) {
+
+        // Cabeçalho da tabela
+        let tr = theadInfo.insertRow();
+        let thId = tr.insertCell();
+        let thProduto = tr.insertCell();
+        let thDescricao = tr.insertCell();
+        let thValor = tr.insertCell();
+        let thIncluidoEm = tr.insertCell();
+
+        tr.style.fontWeight = "700";
+        thId.classList.add("center");
+        thProduto.classList.add("center");
+        thDescricao.classList.add("center");
+        thValor.classList.add("center");
+        thIncluidoEm.classList.add("center");
+
+        thId.innerText = "ID"
+        thProduto.innerText = "Produto";
+        thDescricao.innerText = "Descrição";
+        thValor.innerText = "Valor";
+        thIncluidoEm.innerText = "Incluído em";
+
+        // Corpo da tabela  
+        let tb = tbodyInfo.insertRow();
+        let tdId = tb.insertCell();
+        let tdProduto = tb.insertCell();
+        let tdDescricao = tb.insertCell();
+        let tdValor = tb.insertCell();
+        let tdIncluidoEm = tb.insertCell();
+
+        tdId.innerText = arrayProdutos[i].id;
+        tdProduto.innerText = arrayProdutos[i].nome;
+        tdDescricao.innerText = arrayProdutos[i].descricao;
+        tdValor.innerText = arrayProdutos[i].valor;
+        tdIncluidoEm.innerText = arrayProdutos[i].incluidoEm;
+
+        console.log(arrayProdutos)
+        i++;
+    };
 };
 
 // Adiciona o produto
@@ -89,13 +146,12 @@ function atualizar(id, produto) {
             arrayProdutos[i].nome = produto.nome;
             arrayProdutos[i].descricao = produto.descricao;
             arrayProdutos[i].valor = produto.valor;
-        }
-
+        };
         i++;
-    }
+    };
 
     document.querySelector("#salvar").innerText = "Adicionar";
-     
+
     listar();
 };
 
@@ -145,7 +201,7 @@ function validaCampo(produto) {
         mensagem.style.fontWeight = "700";
 
         throw new Error('Falha no cadastro do produto!');
-    }
+    };
 
     return true;
 };
@@ -164,5 +220,5 @@ function apagar(id) {
         };
 
         i++;
-    }
+    };
 };
