@@ -25,7 +25,21 @@ function salvar() {
             atualizar(editarID, produto);
             mensagem.textContent = `Produto ${produto.nome} atualizado com sucesso!`;
         };
+
+        limparCampos();
     };
+};
+
+// Limpar campos
+function limparCampos() {
+
+    editarID = null;
+
+    document.querySelector("#nome").value = "";
+    document.querySelector("#descricao").value = "";
+    document.querySelector("#valor").value = "";
+    document.querySelector(".infoProduto").innerHTML = `<table border="1"><thead id="thead-info"></thead><tbody id="tbody-info"></tbody></table>`;
+    
 };
 
 // Lista os produtos
@@ -54,7 +68,7 @@ function listar() {
         tdId.innerText = arrayProdutos[i].id;
 
         tdProduto.innerText = arrayProdutos[i].nome;
-        tdProduto.setAttribute("onclick", "infoProduto(" + arrayProdutos[i].id + ")");
+        tdProduto.setAttribute("onclick", "infoProduto(" + tdId.innerText + ")");
         tdProduto.style.cursor = "pointer";
 
         tdValor.innerText = `R$ ${arrayProdutos[i].valor}`;
@@ -76,9 +90,9 @@ function listar() {
 };
 
 // Exibe todas as informações do produto
-function infoProduto() {
+function infoProduto(ID) {
     let i = 0;
-    // const date = new Date(produtos[id].incluidoEm);
+    // editar = dados;
 
     let theadInfo = document.querySelector("#thead-info");
     let tbodyInfo = document.querySelector("#tbody-info");
@@ -87,42 +101,47 @@ function infoProduto() {
     // Cria a tabela das informações
     while (i < arrayProdutos.length) {
 
-        // Cabeçalho da tabela
-        let tr = theadInfo.insertRow();
-        let thId = tr.insertCell();
-        let thProduto = tr.insertCell();
-        let thDescricao = tr.insertCell();
-        let thValor = tr.insertCell();
-        let thIncluidoEm = tr.insertCell();
+        if (arrayProdutos[i].id == ID) {
 
-        tr.style.fontWeight = "700";
-        thId.classList.add("center");
-        thProduto.classList.add("center");
-        thDescricao.classList.add("center");
-        thValor.classList.add("center");
-        thIncluidoEm.classList.add("center");
+            if (theadInfo.innerText == "") {
 
-        thId.innerText = "ID"
-        thProduto.innerText = "Produto";
-        thDescricao.innerText = "Descrição";
-        thValor.innerText = "Valor";
-        thIncluidoEm.innerText = "Incluído em";
+                // Cabeçalho da tabela
+                let tr = theadInfo.insertRow();
+                let thId = tr.insertCell();
+                let thProduto = tr.insertCell();
+                let thDescricao = tr.insertCell();
+                let thValor = tr.insertCell();
+                let thIncluidoEm = tr.insertCell();
 
-        // Corpo da tabela  
-        let tb = tbodyInfo.insertRow();
-        let tdId = tb.insertCell();
-        let tdProduto = tb.insertCell();
-        let tdDescricao = tb.insertCell();
-        let tdValor = tb.insertCell();
-        let tdIncluidoEm = tb.insertCell();
+                tr.style.fontWeight = "700";
+                thId.classList.add("center");
+                thProduto.classList.add("center");
+                thDescricao.classList.add("center");
+                thValor.classList.add("center");
+                thIncluidoEm.classList.add("center");
 
-        tdId.innerText = arrayProdutos[i].id;
-        tdProduto.innerText = arrayProdutos[i].nome;
-        tdDescricao.innerText = arrayProdutos[i].descricao;
-        tdValor.innerText = arrayProdutos[i].valor;
-        tdIncluidoEm.innerText = arrayProdutos[i].incluidoEm;
+                thId.innerText = "ID"
+                thProduto.innerText = "Produto";
+                thDescricao.innerText = "Descrição";
+                thValor.innerText = "Valor";
+                thIncluidoEm.innerText = "Incluído em";
+            };
 
-        console.log(arrayProdutos)
+            // Corpo da tabela  
+            let tb = tbodyInfo.insertRow();
+            let tdId = tb.insertCell();
+            let tdProduto = tb.insertCell();
+            let tdDescricao = tb.insertCell();
+            let tdValor = tb.insertCell();
+            let tdIncluidoEm = tb.insertCell();
+
+            tdId.innerText = arrayProdutos[i].id;
+            tdProduto.innerText = arrayProdutos[i].nome;
+            tdDescricao.innerText = arrayProdutos[i].descricao;
+            tdValor.innerText = arrayProdutos[i].valor;
+            tdIncluidoEm.innerText = arrayProdutos[i].incluidoEm;
+        };
+        
         i++;
     };
 };
