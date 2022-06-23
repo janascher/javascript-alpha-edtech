@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- #### Meta #### -->
+        <!-- Meta -->
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- #### CSS #### -->
+        <!-- CSS -->
         <link rel="stylesheet" href="./product.css">
 
-        <!-- #### Google Fonts #### -->
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
-        <!-- #### Title #### -->
+        <!-- Title -->
         <title>Lista de Produtos</title>
     </head>
     <body>
@@ -24,27 +24,30 @@
             </header>
             
             <form class="card">
+                <!-- Nome -->
                 <div class="input">
                     <label for="nome">Nome do produto:</label>
                     <input type="text" name="nome" id="nome" />
                 </div>      
-
+               <!-- Descrição -->
                 <div class="input">
                     <label for="descricao">Descrição:</label>
                     <input type="text" name="descricao" id="descricao" />
                 </div>
-
+                <!-- Valor -->
                 <div class="input">
                     <label for="valor">Valor:</label>
                     <input type="text" name="valor" id="valor" />
                 </div>
-
+                <!-- Botões adicionar e listar -->
                 <button id="salvar" class="button" type="button">Adicionar</button>
                 <button id="listar" class="button" type="button">Listar</button>
             </form>
 
+            <!-- Mensagens de sucessos e erros -->
             <div id="mensagem"></div>
 
+            <!-- Lista dos produtos adicionados -->
             <section class="content">
                 <table border="1">
                     <thead>
@@ -57,9 +60,17 @@
                     <tbody id="tbody"></tbody>
                 </table>
             </section>
+
+            <!-- Exibe todas as informações do produto -->
+            <section class="infoProduto">
+                <table border="1">
+                    <thead id="thead-info"></thead>
+                    <tbody id="tbody-info"></tbody>
+                </table>
+            </section>
         </main>
 
-        <!-- #### Script #### -->
+        <!-- Script -->
         <script src="./product.js"></script>
     </body>
 </html>
