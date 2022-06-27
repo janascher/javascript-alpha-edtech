@@ -167,9 +167,6 @@ function pesquisa() {
             let iconEditar = document.createElement("img");
             let iconApagar = document.createElement("img");
 
-            // ARRUMAR O EDITAR. ESTÁ SELECIONANDO O PRIMEIRO ID PARA EDITAR;
-            // QUANDO TEM MAIS DE UM PRODUTO ADICIONADO NA LISTA, ELES NÃO ESTÃO APARECENDO NA TABELA APÓS PESQUISAR;
-            // A PESQUISA NÃO ESTÁ DIFERENCIANDO LETRAS MAIÚSCULAS DAS MINÚSCULAS;
             tdId.innerText = array[i].id;
 
             tdProduto.innerText = array[i].nome;
