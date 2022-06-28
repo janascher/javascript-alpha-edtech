@@ -44,7 +44,9 @@ function factorial(numberF) {
     let resultFactorial = 1;    
 
     for (i = numberF; i >= 1; i--) {
+
         resultFactorial = resultFactorial * i;
+        
     };
     
     console.log(BigInt(resultFactorial))
@@ -57,8 +59,9 @@ function euler(numberE) {
     resultEuler = 0;
     
     for (x = numberE; x >= 0; x--) {
+
         resultEuler = resultEuler + (1 / factorial(x));
- 
+
     };
 
     console.log(resultEuler)
