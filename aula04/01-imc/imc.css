@@ -3,7 +3,7 @@
 }
 
 body {
-    background: url(../assets/image/lotto.jpg) center/cover no-repeat;
+    background: url(./image/imc.jpg) center/cover no-repeat;
     color: rgba(36, 36, 36, 1);
     font-family: "Roboto Condensed", sans-serif;
     overflow: hidden;
@@ -13,9 +13,9 @@ body {
 .background {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    background-color: rgba(112, 112, 112, 0.5);
+    background-color: rgba(112, 112, 112, 0.4);
     min-height: 98vh;
     width: 100%;
 }
@@ -24,25 +24,21 @@ form,
 .resultMessage {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
 }
 
 h1{
+    margin-top: 4rem;
     font-size: 2rem;
     font-weight: 700;
 }
 
-#minNumber,
-#maxNumber {
+#inputWeight,
+#inputHeight {
     font-family: "Roboto Condensed", sans-serif;
-    font-size: 1.5rem;
-    padding: 0.2rem 1rem;
-    width: 11vw;
-}
-
-.text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 0.2rem 1rem;
 }
 
@@ -53,6 +49,7 @@ h1{
     cursor: pointer;
     color: rgba(255, 255, 255, 1);
     font-size: 1.5rem;
+    margin-top: 2vh;
     padding: 0.5rem 1rem; 
 }
 
@@ -61,10 +58,11 @@ h1{
     transition: 2;
 }
 
-#result {
-    border-radius: 1rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+.resultMessage {
+    margin: 2vw;
+}
+
+p {
+    font-size: 1.2rem;
     padding: 0.2rem 1rem;
-    text-shadow: 1px 1px 1px rgb(178, 185, 181);
 }

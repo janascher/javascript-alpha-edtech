@@ -3,7 +3,7 @@
 }
 
 body {
-    background: url(../assets/image/brazil.jpg) center/cover no-repeat;
+    background: url(./image/brazil.jpg) center/cover no-repeat;
     color: rgba(36, 36, 36, 1);
     font-family: "Roboto Condensed", sans-serif;
     overflow: hidden;
