@@ -6,28 +6,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- #### Stylesheet #### -->
-        <link rel="stylesheet" href="./css/page1.css">
+        <link rel="stylesheet" href="./page3.css">
         <!-- #### Google Fonts #### -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <!-- #### Title #### -->
-        <title>Página 01</title>
+        <title>Página 03</title>
     </head>
     <body>
         <main class="card">
-            <!-- #### Formulário #### -->
-            <form class="container">
-                <label class="text" for="inputNumber">Insira um número inteiro:</label>
-                <input class="input" type="text" name="inputNumber" id="inputNumber" />
-
+            <!-- #### Seleção de roupas #### -->
+            <div class="container">
+                <p class="text">Selecione a sua roupa feminina:</p>
+                <select name="female" id="female">
+                    <option value="blouse">Blusas</option>
+                    <option value="bags">Bolsas</option>
+                    <option value="t-shirt">Camiseta</option>
+                    <option value="pants">Calça</option>
+                    <option value="dresses">Vestidos</option>
+                </select>
                 <button class="text button" type="button">Exibir</button>
-            </form>
+            </div>           
 
-            <p id="message"></p>
+            <div id="productDisplay"></div>
         
-        </main>
+        </main> 
         <!-- #### Script #### -->
-        <script src="../../js/page1.js"></script>
+        <script src="./page3.js"></script>
     </body>
 </html>

@@ -6,33 +6,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- #### Stylesheet #### -->
-        <link rel="stylesheet" href="./css/page3.css">
+        <link rel="stylesheet" href="./page1.css">
         <!-- #### Google Fonts #### -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <!-- #### Title #### -->
-        <title>Página 03</title>
+        <title>Página 01</title>
     </head>
     <body>
         <main class="card">
-            <!-- #### Seleção de roupas #### -->
-            <div class="container">
-                <p class="text">Selecione a sua roupa feminina:</p>
-                <select name="female" id="female">
-                    <option value="blouse">Blusas</option>
-                    <option value="bags">Bolsas</option>
-                    <option value="t-shirt">Camiseta</option>
-                    <option value="pants">Calça</option>
-                    <option value="dresses">Vestidos</option>
-                </select>
-                <button class="text button" type="button">Exibir</button>
-            </div>           
+            <!-- #### Formulário #### -->
+            <form class="container">
+                <label class="text" for="inputNumber">Insira um número inteiro:</label>
+                <input class="input" type="text" name="inputNumber" id="inputNumber" />
 
-            <div id="productDisplay"></div>
+                <button class="text button" type="button">Exibir</button>
+            </form>
+
+            <p id="message"></p>
         
-        </main> 
+        </main>
         <!-- #### Script #### -->
-        <script src="./js/page3.js"></script>
+        <script src="./page1.js"></script>
     </body>
 </html>
