@@ -6,33 +6,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- #### Stylesheet #### -->
-        <link rel="stylesheet" href="../styles/strings.css">
+        <link rel="stylesheet" href="../01-number/form.css">
         <!-- #### Google Fonts #### -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <!-- #### Title #### -->
-        <title>Palavras</title>
+        <title>Compare Números</title>
     </head>
     <body>
         <header class="container">
-            <h1 class="title">Comparação Entre Duas Palavras </h1>
-            <p class="text">Descubra se o tamanho da primeira palavra é maior, menor ou igual ao da segunda palavra.</p>
+            <h1 class="title">Comparação Entre Dois Números</h1>
+            <p class="text">Descubra se o primeiro número é maior, menor ou igual ao segundo número.</p>
         </header>
         <main>
             <!-- #### Formulário #### -->
             <form class="container">
-                <label class="text" for="first-string">Digite a primeira palavra:</label>
-                <input type="text" name="first-string" id="first-string" />
+                <label class="text" for="firstNumber">Digite o primeiro número:</label>
+                <input type="number" name="first-number" id="first-number" />
 
-                <label class="text" for="secondString">Digite a segunda palavra:</label>
-                <input type="text" name="second-string" id="second-string" />
+                <label class="text" for="secondNumber">Digite o segundo número:</label>
+                <input type="number" name="second-number" id="second-number" />
 
                 <button class="button" type="submit">Comparar</button>
             </form>
             <p class="response" id="response"></p>
         </main>
         <!-- #### Script #### -->
-        <script src="../../js/strings.js"></script>
+        <script src="../01-number/form.js"></script>
     </body>
 </html>
