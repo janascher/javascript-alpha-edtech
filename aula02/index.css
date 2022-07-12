@@ -3,7 +3,7 @@
 }
 
 body {
-    background: url(../assets/image/question-psyduck.jpg) center/cover no-repeat fixed;
+    background: url(./image/question-psyduck.jpg) center/cover no-repeat fixed;
     overflow: hidden;
 }
 
