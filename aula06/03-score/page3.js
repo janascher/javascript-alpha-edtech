@@ -1,6 +1,6 @@
 const button = document.querySelector("#button");
 const message = document.querySelector("#message");
-const audioAlarm = new Audio("./assets/sound/mechanical_clock_ring.ogg");
+const audioAlarm = new Audio("../assets/sound/mechanical_clock_ring.ogg");
 
 let minuteInput;
 let secondInput;
@@ -20,7 +20,6 @@ function display() {
 }
 
 function countdown() {
-    // const startTimer = parseInt((minuteInput.value) * 60) + parseInt((secondInput.value));
     message.innerHTML = `Faltam ${minuteInput} : ${secondInput}`;
     secondInput--;
 
