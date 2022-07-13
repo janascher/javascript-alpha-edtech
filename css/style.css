@@ -1,6 +1,5 @@
 * {
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 
 body {
@@ -10,19 +9,61 @@ body {
     font-family: 'Roboto', sans-serif;
     color: rgb(50, 51, 48);
     padding: 30px;
-    max-width: 860px;
     margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
+main {
+    /* height: 26vmax; */
+    width: 100%;
 }
 
 header {
     text-align: center;
+    width: 100%;
 }
 
-nav li {
+header a {
+    color:  rgb(50, 51, 48);
+    font-weight: 700;
+    text-decoration: none
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    line-height: 5vh;
     list-style: none;
-    line-height: 4vh;
+    padding: 0;
+    text-align: left;
+}
+
+li a {
+    color:  rgb(50, 51, 48);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color:  rgb(38, 59, 155);
+}
+
+.isDisabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color:  rgb(50, 51, 48);
+    font-weight: 700;
+    text-decoration: none;
 }

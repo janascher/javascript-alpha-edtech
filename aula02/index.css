@@ -7,7 +7,9 @@ body {
     overflow: hidden;
 }
 
-
+main {
+    height: 32vh;
+}
 
 .container {
     display: flex;
@@ -48,4 +50,19 @@ ul {
 .item a:hover {
     color: rgba(98, 37, 28, 1);
     text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color:  rgb(50, 51, 48);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:  rgb(38, 59, 155);
 }
