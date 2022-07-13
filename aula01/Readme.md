@@ -14,20 +14,9 @@
 
 --- 
 
-## 👀 Preview
-
-<div  align="center">
-	<a  href="https://janascher.github.io/javascript-alpha-edtech/">
-	<img  src="https://user-images.githubusercontent.com/79182711/171922165-aa0231c1-d330-45d4-811e-0a1902a7bddf.PNG"  alt="Imagem da página da aula 01 de Javascript"  title="Imagem da página da aula 01 de Javascript"  width="650" />
-	</a>
-	<br />
-</div>
-
---- 
-
 ## 🧐 Sobre a atividade 
 
-- Crie três arquivos (`index.html`, `index.js` e `index.css`);
+- Crie três arquivos (`index.html`, `index.js` e `index.css`):
 	- Os elementos de HTML e chamadas ao arquivo `index.js` e `index.css` devem estar no arquivo `index.html`;
 	- Os elementos de estilo CSS devem estar no arquivo `index.css`;
 	- Os elementos de Javascript devem estar no arquivo `index.js`;
@@ -38,25 +27,25 @@
 ## 🔗 Referências básicas
 
 - Vídeo: O que é e como funcionam os algoritmos?
-https://www.youtube.com/watch?v=Xo1V_JL1yAg
+	- https://www.youtube.com/watch?v=Xo1V_JL1yAg
 
-- Elementos das Linguagens de Programação
-https://universidadedatecnologia.com.br/elementos-de-linguagens-de-programacao/
+- Elementos das Linguagens de Programação:
+	- https://universidadedatecnologia.com.br/elementos-de-linguagens-de-programacao/
 
 - Usando o console do navegador:
-https://www.youtube.com/watch?v=eSPMRDcq9Co&t=22s
+	- https://www.youtube.com/watch?v=eSPMRDcq9Co&t=22s
 
 - Live Server plugin vsCode:
-https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+	- https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
 
 - Fontes do Google:
-https://fonts.google.com/
+	- https://fonts.google.com/
 
-- Javascript básico
-https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+- Javascript básico:
+	- https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics
 
-- Primeiros passos com Javascript
-https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+- Primeiros passos com Javascript:
+	- https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript
 
 ---  
 
