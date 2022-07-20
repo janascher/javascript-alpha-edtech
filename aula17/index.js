@@ -6,7 +6,7 @@ const result = document.querySelector("#result");
 function getUf() {
     return new Promise((resolve, reject) => {
         // API de localidades do IBGE
-        fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados`)
+        fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/?orderBy=nome`)
             .then(res => {
                 if(res.status === 200) {
                     return res.json();
