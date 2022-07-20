@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- #### Meta #### -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- #### CSS #### -->
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- #### Google Fonts #### -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- #### Title #### -->
+        <title>Aula 17</title>
+    </head>
+    <body>
+
+        <main>
+            <header>
+                <h1>Previsão do Tempo</h1>
+            </header>
+           
+            <section class="container">
+                <select id="uf"></select>
+                <select id="city" disabled></select>     
+            </section>
+            
+            <section id="result">
+
+                <!-- Dia 1 -->
+                <section class="infoDate">
+                    <h3 id="date1"></h3>
+                    <p id="weekday1"></p>
+                </section>
+                <section class="showDate" id="day1">
+                    <!-- Manhã -->
+                    <div class="morningInfo">
+                        <h4 id="period1"></h4>
+                        <img id="icon1" src="" />
+                        <p class="summary" id="summary1"></p>
+                        <p id="tMin1"></p>
+                        <p id="tMax1">
+                    </div>
+                    <!-- Tarde -->
+                    <div class="afternoonInfo">
+                        <h4 id="period2"></h4>
+                        <img id="icon2" src="" />
+                        <p class="summary"  id="summary2"></p>
+                        <p id="tMin2"></p>
+                        <p id="tMax2"></p>
+                    </div>
+                    <!-- Noite -->
+                    <div class="nightInfo">
+                        <h4 id="period3"></h4>
+                        <img id="icon3" src="" />
+                        <p class="summary" id="summary3"></p>
+                        <p id="tMin3"></p>
+                        <p id="tMax3"></p>
+                    </div>
+                </section>
+
+                <!-- Dia 2 -->
+                <section class="infoDate">
+                    <h3 id="date2"></h3>
+                    <p id="weekday2"></p>
+                </section>
+                <section class="showDate" id="day1">
+                    <!-- Manhã -->
+                    <div class="morningInfo">
+                        <h4 id="period21"></h4>
+                        <img id="icon21" src="" />
+                        <p class="summary" id="summary21"></p>
+                        <p id="tMin21"></p>
+                        <p id="tMax21">
+                    </div>
+                    <!-- Tarde -->
+                    <div class="afternoonInfo">
+                        <h4 id="period22"></h4>
+                        <img id="icon22" src="" />
+                        <p class="summary"  id="summary22"></p>
+                        <p id="tMin22"></p>
+                        <p id="tMax22"></p>
+                    </div>
+                    <!-- Noite -->
+                    <div class="nightInfo">
+                        <h4 id="period23"></h4>
+                        <img id="icon23" src="" />
+                        <p class="summary" id="summary23"></p>
+                        <p id="tMin23"></p>
+                        <p id="tMax23"></p>
+                    </div>
+                </section>
+            </section>
+        </main>
+        
+        <!-- #### Script #### -->
+        <script src="./index.js"></script>
+    </body>
+</html>
