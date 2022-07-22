@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0%, 39%, 0%) repeat;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400; 
+    margin: auto;
+    padding: 2vw;
+    text-align: center;
+    width: 95vmax;
+}
+
+h1 {
+    color: rgb(100%, 80%, 0%);
+    font-size: 3rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+button {
+    background: rgb(120, 144, 156);
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 3px 0px 0px rgb(33%, 43%, 48%);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0 10px 0 0;
+    outline: none;
+    padding: 15px 10px;
+}
+
+#result { 
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    line-height: 4rem;
+}
+
+img {
+    padding: 2vw;
+    width: 20%;
+}
