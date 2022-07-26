@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- #### Meta #### -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- #### Stylesheet #### -->
+        <link rel="stylesheet" href="./style.css">
+
+        <!-- #### Google Fonts #### -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+
+        <!-- #### Title #### -->
+        <title>Aula 19 - Bingo</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Bingo</h1>
+            </header>
+            
+            <section>
+                <label for="numCards">Quantas cartelas de bingo?</label>
+                <input type="text" name="numCards" id="numCards" placeholder="Digite o número de cartela" />
+                <button type="button" id="btnDrawCards">Retirar cartela</button>
+
+                <button type="button" id="btnDrawBall">Iniciar sorteio</button>
+            </section>
+
+            <section id="drawNumber">           
+            </section>
+
+            <div id="result"></div>
+
+            <section class="grid" id="grid">
+            </section>
+
+        </main> 
+        <!-- #### Script #### -->
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
